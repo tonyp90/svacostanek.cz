@@ -1,4 +1,5 @@
-**/vendor
-**/temp
-**/log
-**/bin
+/vendor/**
+/temp/**
+/log/**
+/bin/**
+**/.vscode
