@@ -1,0 +1,8 @@
+body {
+  background-color: #1d1d1b;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(40, 40, 40, var(--bs-bg-opacity)) !important;
+}

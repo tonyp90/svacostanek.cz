@@ -16,7 +16,7 @@ class Bootstrap
 
 		$configurator->setDebugMode('31.47.102.92'); // enable for your remote IP
 		$configurator->enableTracy($appDir . '/log');
-
+		$configurator->setTimeZone('Europe/Prague');
 		$configurator->setTempDirectory($appDir . '/temp');
 
 		$configurator->createRobotLoader()
