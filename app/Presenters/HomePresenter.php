@@ -10,11 +10,11 @@ final class HomePresenter extends BasePresenter
 {
     public function renderDefault()
     {
-        if (date('H') > 19 && date('H') < 7) {
-            $layoutColor = 'black';
+        if (date('H') > 7 && date('H') < 19) {
+            $layoutColor = 'white';
     
         } else {
-            $layoutColor = 'white';
+            $layoutColor = 'black';
         }
 
         $this->template->layoutColor = $layoutColor;
