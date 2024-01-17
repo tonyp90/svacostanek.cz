@@ -1,0 +1,7 @@
+FROM composer
+WORKDIR /app/
+RUN rm -rf /app/*
+
+ADD composer.json /app
+RUN composer install
+RUN mv /app/vendor/* /app/

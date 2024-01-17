@@ -1,0 +1,43 @@
+version: '3.8'
+
+# Services
+services:
+
+    # PHP Service
+    php:
+        build:
+            dockerfile: php-dockerfile
+            context: .
+        volumes:
+            - ./:/var/www/html
+            - vendor:/var/www/html/vendor 
+            - type: bind
+              source: ./docker/php.ini
+              target: /usr/local/etc/php/conf.d/php.ini
+            - type: tmpfs
+              target: /var/www/html/temp
+            - type: tmpfs
+              target: /var/www/html/log
+
+    # Nginx Service
+    nginx:
+        image: nginx:latest
+        ports:
+            - ${PORT}:80
+        links:
+            - 'php'
+        volumes:
+            - ./docker:/etc/nginx/conf.d
+        depends_on:
+            - php
+
+    # Composer
+    composer:
+        build:
+            dockerfile: composer-dockerfile
+            context: . 
+        volumes:
+            - vendor:/app
+
+volumes:
+    vendor:
