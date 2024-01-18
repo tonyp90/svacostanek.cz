@@ -17,6 +17,8 @@ services:
               target: /var/www/html/temp
             - type: tmpfs
               target: /var/www/html/log
+        environment:
+            - DEBUG=${DEBUG}
 
     nginx:
         image: nginx:latest
