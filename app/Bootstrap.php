@@ -14,7 +14,7 @@ class Bootstrap
 		$configurator = new Configurator;
 		$appDir = dirname(__DIR__);
 
-		if (intval(getenv('DEBUG'))) {
+		if (intval(getenv('DEBUG')) === 1) {
 			$configurator->setDebugMode(true);
 		} else {
 			$configurator->setDebugMode(false);
