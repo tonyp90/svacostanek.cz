@@ -4,7 +4,7 @@ services:
 
     php:
         build:
-            dockerfile: docker-conf/php-dockerfile
+            dockerfile: docker/php-dockerfile
             context: .
         volumes:
             - ./app:/var/www/html/app
@@ -13,12 +13,12 @@ services:
               source: ./www/index.php
               target: /var/www/html/www/index.php
             - type: bind
-              source: ./docker-conf/php/php.ini
+              source: ./docker/php/php.ini
               target: /usr/local/etc/php/conf.d/php.ini
-            - type: tmpfs
-              target: /var/www/html/temp
-            - type: tmpfs
-              target: /var/www/html/log
+            #- type: tmpfs
+            #  target: /var/www/html/temp
+            #- type: tmpfs
+            #  target: /var/www/html/log
         environment:
             - DEBUG=${DEBUG}
 
@@ -29,7 +29,10 @@ services:
         links:
             - 'php'
         volumes:
-            - ./docker-conf/nginx:/etc/nginx/conf.d
+            - ./docker/nginx:/etc/nginx/conf.d
             - ./www:/var/www/html/www
         depends_on:
             - php
+
+
+

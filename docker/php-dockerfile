@@ -15,3 +15,7 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql gd zip
 
 # Composer copy
 COPY --from=composer /app/vendor /var/www/html/vendor
+
+# reate log dor
+RUN mkdir /var/www/html/log
+RUN chown -R www-data /var/www/html/log
