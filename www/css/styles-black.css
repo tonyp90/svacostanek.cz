@@ -6,3 +6,9 @@ body {
   --bs-bg-opacity: 1;
   background-color: rgba(40, 40, 40, var(--bs-bg-opacity)) !important;
 }
+
+.container-fluid {
+  background-size: cover;
+  background: url("../images/bg-left.png") left top no-repeat, url("../images/bg-right.png") right top no-repeat;
+  background-origin: content-box;
+}

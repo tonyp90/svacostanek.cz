@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    width: fit-content;
+}
+  
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(40, 40, 40, var(--bs-bg-opacity)) !important;
+}
+  
+.container-fluid {
+    background: url("../images/bg-left.png") left top repeat-y, url("../images/bg-right.png") right top repeat-y;
+    background-size: contain;
+}
+
+.logo {
+    text-align: center;
+    margin: 0 20% 0 20%;
+
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+}
+
+.fa-ul {
+    margin: 0;
+}
+
+.fa-ul>li {
+    text-align: center;
+    color: white;
+
+}
+
+h1 {
+    font-size: medium;
+    text-align: center;
+    color: white;
+}
+
+.contacts>li {
+    text-align: center;
+    font-weight: normal;
+}
+
+.social {
+    text-align: center;
+    font-size: xx-large;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
