@@ -8,10 +8,7 @@
 	<title>{ifset title}{include title|stripHtml} | {/ifset}Sváčostánek</title>
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 	<!-- Font Awesome icons (free version)-->
-	<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 	<!-- Google fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
 	<!-- Core theme CSS (includes Bootstrap)-->
 	<link href="css/styles.css" rel="stylesheet" />
 	{*<link href="css/styles-{$layoutColor}.css" rel="stylesheet" />*}
@@ -54,7 +51,7 @@
 					<img alt="logo" src="images/logo.png" class="img-fluid">
 				</div>
 
-				<ul class="fa-ul">
+				<ul class="fa-ul p-0">
 					<li>
 						výběrová káva s sebou
 					</li>
@@ -115,23 +112,23 @@
 				<div class="row d-flex justify-content-center">
 					<div class="col-md-3 col-sm-12 col-12 mt-3">
 						<div class="card-box">
-								<ul class="fa-ul contacts">
-									<li>
-										Sváčostánek
-									</li>
-									<li>
-										Obchodní ul. č 9
-									</li>
-									<li>
-										318 00 Plzeň
-									</li>
-									<li>
-										<a href="https://www.svacostanek.cz">www.svacostanek.cz</a>
-									</li>		
-									<li>
-										<a href="mailto:svacostanek(at)gmail.com"> svacostanek(at)gmail.com</a>
-									</li>
-								</ul>
+							<ul class="fa-ul contacts">
+								<li>
+									Sváčostánek
+								</li>
+								<li>
+									Obchodní ul. č 9
+								</li>
+								<li>
+									318 00 Plzeň
+								</li>
+								<li>
+									<a href="https://www.svacostanek.cz">www.svacostanek.cz</a>
+								</li>		
+								<li>
+									<a href="mailto:svacostanek(at)gmail.com">svacostanek(at)gmail.com</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 						
@@ -160,7 +157,6 @@
 
 		
 				<div class="row d-flex justify-content-center mt-3">
-
 					<div class="col-md-3 col-sm-2 col-2 social">
 						<a class="social-icon" href="https://www.facebook.com/profile.php?id=61554558127335/"><i class="fab fa-facebook-f"></i></a>
 					</div>
@@ -346,7 +342,7 @@
 	<!-- Nette forms-->
 	<script src="{$basePath}/assets/netteForms.js"></script>
 	<!-- Bootstrap core JS-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="{$basePath}/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
 	{/block}

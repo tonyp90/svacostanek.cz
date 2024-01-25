@@ -1,6 +1,22 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Regular.ttf);
+    font-weight: normal;
+}
+
+
+
 body {
     background-color: black;
     width: fit-content;
+    font-family: Quicksand;
+    font-weight: normal;
 }
   
 .bg-primary {
@@ -16,17 +32,12 @@ body {
 .logo {
     text-align: center;
     margin: 0 20% 0 20%;
-
 }
 
 p {
     color: white;
     text-align: center;
     margin: 0;
-    font-family: var(--bs-body-font-family);
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
 }
 
 .fa-ul {
@@ -36,13 +47,17 @@ p {
 .fa-ul>li {
     text-align: center;
     color: white;
+}
 
+ul {
+    list-style-type: none;
 }
 
 h1 {
-    font-size: medium;
+    font-size: small;
     text-align: center;
     color: white;
+    font-family: inherit;
 }
 
 .contacts>li {
