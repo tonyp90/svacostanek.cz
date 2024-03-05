@@ -10,11 +10,14 @@
     font-weight: normal;
 }
 
-
+html {
+    overflow-x: hidden;
+}
 
 body {
     background-color: black;
     width: fit-content;
+    overflow-x: hidden;
     font-family: Quicksand;
     font-weight: normal;
 }
